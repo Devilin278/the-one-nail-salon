@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="goldWax" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE89E"/>
+      <stop offset="35%" stop-color="#F5C443"/>
+      <stop offset="70%" stop-color="#D49A24"/>
+      <stop offset="100%" stop-color="#A67012"/>
+    </linearGradient>
+    <linearGradient id="darkWax" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#262626"/>
+      <stop offset="60%" stop-color="#141414"/>
+      <stop offset="100%" stop-color="#080808"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Circle (Obsidian & Luxury Gold Ring) -->
+  <circle cx="128" cy="128" r="122" fill="url(#darkWax)"/>
+  <circle cx="128" cy="128" r="121" fill="none" stroke="url(#goldWax)" stroke-width="3.5"/>
+  <circle cx="128" cy="128" r="113" fill="none" stroke="url(#goldWax)" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.7"/>
+
+  <!-- Waxing & Spa Esthetics Iconography -->
+  <g transform="translate(128, 126)">
+    <!-- Perfectly Sculpted Arched Eyebrow Silhouette (Top Center) -->
+    <path d="M -50 -18 
+             C -32 -38 0 -44 32 -34 
+             C 48 -28 58 -18 58 -16 
+             C 56 -16 42 -22 28 -25 
+             C -2 -30 -30 -24 -46 -15 
+             C -49 -16 -50 -17 -50 -18 Z" 
+          fill="url(#goldWax)"/>
+
+    <!-- Gentle Eyelash Contour Accent -->
+    <path d="M -34 -2 C -18 8 8 8 26 -2" fill="none" stroke="url(#goldWax)" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Delicate Flutter Lashes -->
+    <line x1="-18" y1="4" x2="-22" y2="12" stroke="url(#goldWax)" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="-5" y1="6" x2="-6" y2="15" stroke="url(#goldWax)" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="10" y1="4" x2="12" y2="12" stroke="url(#goldWax)" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Soothing Botanical Spa Sprig (Lavender & Aloe / Orchid leaves - Left to Bottom) -->
+    <g transform="translate(-16, 26)">
+      <!-- Main Curved Stem -->
+      <path d="M -30 25 C -15 15 5 10 35 12" fill="none" stroke="url(#goldWax)" stroke-width="2" stroke-linecap="round"/>
+      <!-- Botanical Leaves -->
+      <path d="M -18 18 C -14 10 -6 10 -4 15 C -8 20 -14 22 -18 18 Z" fill="url(#goldWax)" opacity="0.9"/>
+      <path d="M -8 14 C -4 6 4 6 6 11 C 2 16 -4 18 -8 14 Z" fill="url(#goldWax)" opacity="0.8"/>
+      <path d="M 4 11 C 8 3 16 3 18 8 C 14 13 8 15 4 11 Z" fill="url(#goldWax)" opacity="0.9"/>
+      <path d="M 16 11 C 20 4 28 4 30 9 C 26 14 20 15 16 11 Z" fill="url(#goldWax)" opacity="0.8"/>
+      <path d="M 28 12 C 32 6 38 7 40 11 C 36 15 32 15 28 12 Z" fill="url(#goldWax)" opacity="0.7"/>
+    </g>
+
+    <!-- Warm Soothing Wax Droplet / Honey Serum Glow -->
+    <g transform="translate(36, -8)">
+      <path d="M 0 -14 C 4 -8 10 -2 10 6 C 10 12 5 16 0 16 C -5 16 -10 12 -10 6 C -10 -2 -4 -8 0 -14 Z" 
+            fill="url(#goldWax)" opacity="0.95"/>
+      <circle cx="-3" cy="4" r="2.5" fill="#FFF" opacity="0.75"/>
+    </g>
+
+    <!-- Spa Sparkle Stars -->
+    <g transform="translate(-46, -42) scale(0.75)">
+      <path d="M 0 -10 Q 0 0 10 0 Q 0 0 0 10 Q 0 0 -10 0 Q 0 0 0 -10 Z" fill="url(#goldWax)"/>
+    </g>
+    <g transform="translate(48, -45) scale(0.55)">
+      <path d="M 0 -10 Q 0 0 10 0 Q 0 0 0 10 Q 0 0 -10 0 Q 0 0 0 -10 Z" fill="#FFE89E"/>
+    </g>
+    <g transform="translate(-45, 12) scale(0.5)">
+      <path d="M 0 -10 Q 0 0 10 0 Q 0 0 0 10 Q 0 0 -10 0 Q 0 0 0 -10 Z" fill="url(#goldWax)"/>
+    </g>
+  </g>
+</svg>

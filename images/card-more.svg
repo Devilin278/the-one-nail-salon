@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="goldEnhance" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE89E"/>
+      <stop offset="35%" stop-color="#F5C443"/>
+      <stop offset="70%" stop-color="#D49A24"/>
+      <stop offset="100%" stop-color="#A67012"/>
+    </linearGradient>
+    <linearGradient id="darkEnhance" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#262626"/>
+      <stop offset="60%" stop-color="#141414"/>
+      <stop offset="100%" stop-color="#080808"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Circle (Obsidian & Luxury Gold Ring) -->
+  <circle cx="128" cy="128" r="122" fill="url(#darkEnhance)"/>
+  <circle cx="128" cy="128" r="121" fill="none" stroke="url(#goldEnhance)" stroke-width="3.5"/>
+  <circle cx="128" cy="128" r="113" fill="none" stroke="url(#goldEnhance)" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.7"/>
+
+  <!-- Nail Enhancements Iconography -->
+  <g transform="translate(128, 128)">
+    <!-- Centerpiece: Brilliant Faceted Diamond Jewel (3D Nail Art / Luxury Gel) -->
+    <g transform="translate(0, -32) scale(0.95)">
+      <!-- Diamond Top Table -->
+      <polygon points="-28,-14 28,-14 18,-24 -18,-24" fill="url(#goldEnhance)" opacity="0.95"/>
+      <!-- Diamond Star/Crown facets -->
+      <polygon points="-28,-14 -18,-24 0,-14" fill="#FFE89E" opacity="0.8"/>
+      <polygon points="28,-14 18,-24 0,-14" fill="#FFE89E" opacity="0.8"/>
+      <!-- Diamond Bottom Pavilion -->
+      <polygon points="-28,-14 0,22 0,-14" fill="url(#goldEnhance)" opacity="0.85"/>
+      <polygon points="28,-14 0,22 0,-14" fill="url(#goldEnhance)" opacity="0.95"/>
+      <!-- Outer Outline -->
+      <polygon points="-18,-24 18,-24 28,-14 0,22 -28,-14" fill="none" stroke="#FFE89E" stroke-width="2"/>
+      <!-- Jewel Inner Gleam -->
+      <line x1="0" y1="-24" x2="0" y2="22" stroke="#FFF" stroke-width="1.5" opacity="0.75"/>
+    </g>
+
+    <!-- Sculpted Nail Extension Forms (Almond & Coffin Shapes) -->
+    <!-- Left Sculpted Coffin Extension -->
+    <g transform="translate(-36, 18) rotate(-14)">
+      <path d="M -9 35 L -11 0 C -11 -12 -5 -22 0 -22 C 5 -22 11 -12 11 0 L 9 35 Z" 
+            fill="#1A1A1A" stroke="url(#goldEnhance)" stroke-width="2.5"/>
+      <!-- Coffin Tip Accent -->
+      <path d="M -10 2 C -10 -10 -5 -18 0 -18 C 5 -18 10 -10 10 2 Z" fill="url(#goldEnhance)" opacity="0.85"/>
+      <!-- Ombre Gradient Highlight -->
+      <line x1="0" y1="-16" x2="0" y2="22" stroke="#FFF" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+    </g>
+
+    <!-- Right Sculpted Stiletto Extension -->
+    <g transform="translate(36, 18) rotate(14)">
+      <path d="M -9 35 L -10 2 C -10 -10 -4 -24 0 -28 C 4 -24 10 -10 10 2 L 9 35 Z" 
+            fill="#1A1A1A" stroke="url(#goldEnhance)" stroke-width="2.5"/>
+      <!-- Stiletto Tip Accent -->
+      <path d="M -9 2 C -9 -8 -3 -22 0 -25 C 3 -22 9 -8 9 2 Z" fill="url(#goldEnhance)" opacity="0.85"/>
+      <!-- Highlight -->
+      <line x1="0" y1="-20" x2="0" y2="22" stroke="#FFF" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+    </g>
+
+    <!-- Precision Nail Art Styling Brush (Crossing from lower-left to center) -->
+    <g transform="translate(0, 15) rotate(-35)">
+      <!-- Brush Handle -->
+      <line x1="-55" y1="42" x2="15" y2="-15" stroke="url(#goldEnhance)" stroke-width="3" stroke-linecap="round"/>
+      <!-- Chrome/Gold Ferrule -->
+      <rect x="13" y="-19" width="10" height="6" rx="1.5" fill="#FFE89E" transform="rotate(-38 18 -16)"/>
+      <!-- Fine Precision Bristles & Point -->
+      <path d="M 22 -20 Q 30 -26 34 -30 Q 28 -23 20 -16 Z" fill="url(#goldEnhance)"/>
+      <circle cx="34" cy="-30" r="1.5" fill="#FFF"/>
+    </g>
+
+    <!-- Glamour Sparkles & Diamond Radiance -->
+    <g transform="translate(48, -42) scale(0.85)">
+      <path d="M 0 -12 Q 0 0 12 0 Q 0 0 0 12 Q 0 0 -12 0 Q 0 0 0 -12 Z" fill="url(#goldEnhance)"/>
+    </g>
+    <g transform="translate(-48, -45) scale(0.6)">
+      <path d="M 0 -12 Q 0 0 12 0 Q 0 0 0 12 Q 0 0 -12 0 Q 0 0 0 -12 Z" fill="#FFE89E"/>
+    </g>
+    <g transform="translate(0, 48) scale(0.5)">
+      <path d="M 0 -10 Q 0 0 10 0 Q 0 0 0 10 Q 0 0 -10 0 Q 0 0 0 -10 Z" fill="url(#goldEnhance)"/>
+    </g>
+  </g>
+</svg>

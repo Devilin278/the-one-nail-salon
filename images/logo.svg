@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1492 640" width="1492" height="640">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4A738"/>
+      <stop offset="35%" stop-color="#E2B33D"/>
+      <stop offset="70%" stop-color="#B8861B"/>
+      <stop offset="100%" stop-color="#FCD561"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main Brand Name: THE ONE (Enlarged to fill space) -->
+  <text x="746" y="225" 
+        font-family="'Playfair Display', 'Cinzel', 'Didot', 'Georgia', serif" 
+        font-size="190" 
+        font-weight="900" 
+        letter-spacing="24" 
+        fill="#111111" 
+        text-anchor="middle">THE ONE</text>
+
+  <!-- Script Subheading: Nail Salon (Enlarged) -->
+  <text x="746" y="395" 
+        font-family="'Allura', 'Great Vibes', cursive" 
+        font-size="175" 
+        font-weight="400" 
+        letter-spacing="4" 
+        fill="url(#gold)" 
+        text-anchor="middle">Nail Salon</text>
+
+  <!-- Divider Line with Diamond -->
+  <g transform="translate(746, 465)">
+    <line x1="-380" y1="0" x2="-55" y2="0" stroke="#111111" stroke-width="3" opacity="0.9"/>
+    <polygon points="0,-10 10,0 0,10 -10,0" fill="url(#gold)"/>
+    <circle cx="-28" cy="0" r="4" fill="#111111"/>
+    <circle cx="28" cy="0" r="4" fill="#111111"/>
+    <line x1="55" y1="0" x2="380" y2="0" stroke="#111111" stroke-width="3" opacity="0.9"/>
+  </g>
+
+  <!-- Location Tag: SILVER SPRING, MD (Enlarged) -->
+  <text x="746" y="540" 
+        font-family="'Poppins', 'Montserrat', sans-serif" 
+        font-size="42" 
+        font-weight="700" 
+        letter-spacing="18" 
+        fill="#111111" 
+        text-anchor="middle">SILVER SPRING, MD</text>
+</svg>
