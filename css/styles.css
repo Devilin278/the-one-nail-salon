@@ -1230,6 +1230,10 @@ body.site {
   color: var(--ink);
 }
 
+.plist__head:last-child {
+  margin-bottom: 0;
+}
+
 .plist__title {
   max-width: 75%;
 }
