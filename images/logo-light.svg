@@ -1,12 +1,53 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1492 640" width="1492" height="640">
   <defs>
+    <!-- Light Gold Gradient -->
     <linearGradient id="gold-lt" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FFE89E"/>
       <stop offset="50%" stop-color="#F7C42D"/>
       <stop offset="100%" stop-color="#C5921E"/>
     </linearGradient>
+
+    <!-- Calligraphic Heart Red-to-Orange Gradient from Reference -->
+    <linearGradient id="heart-grad-lt" x1="10%" y1="10%" x2="90%" y2="90%">
+      <stop offset="0%" stop-color="#E52D27"/>
+      <stop offset="25%" stop-color="#ED4A23"/>
+      <stop offset="55%" stop-color="#F7781E"/>
+      <stop offset="80%" stop-color="#F9A028"/>
+      <stop offset="100%" stop-color="#F26522"/>
+    </linearGradient>
   </defs>
 
+  <!-- Encompassing Open Heart Shape (Background Layer) -->
+  <g class="logo-heart" opacity="0.95">
+    <!-- Left Lobe of Open Heart -->
+    <path d="M 746 170 
+             C 715 120, 635 38, 515 38 
+             C 395 38, 305 125, 305 245 
+             C 305 345, 365 435, 455 505 
+             C 470 517, 482 523, 488 525 
+             C 480 518, 470 505, 456 492 
+             C 382 422, 338 340, 338 250 
+             C 338 148, 415 72, 512 72 
+             C 615 72, 692 140, 746 170 Z" 
+          fill="url(#heart-grad-lt)"/>
+
+    <!-- Right Lobe & Swooping Open Tail -->
+    <path d="M 746 170 
+             C 788 118, 882 38, 1010 38 
+             C 1140 38, 1240 135, 1240 260 
+             C 1240 385, 1165 488, 1050 555 
+             C 935 622, 775 640, 615 630 
+             C 505 622, 405 585, 350 528 
+             C 345 522, 348 520, 355 523 
+             C 415 565, 518 592, 625 598 
+             C 770 605, 915 585, 1015 525 
+             C 1115 465, 1180 375, 1180 265 
+             C 1180 158, 1098 75, 995 75 
+             C 885 75, 798 140, 746 170 Z" 
+          fill="url(#heart-grad-lt)"/>
+  </g>
+
+  <!-- Foreground Layer: Current Logo sits on top of heart shape -->
   <!-- Main Brand Name: THE ONE (Enlarged) -->
   <text x="746" y="225" 
         font-family="'Playfair Display', 'Cinzel', serif" 
