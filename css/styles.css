@@ -541,52 +541,70 @@ body.site {
   background-color: var(--ink);
   color: var(--bg-card);
   border-bottom: 2px solid var(--ink);
+  width: 100%;
 }
 
 .infobar .sec__in {
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: center;
-  flex-wrap: wrap;
+  justify-items: center;
+  gap: 24px;
   padding-block: 220px 80px;
 }
 
 @media (max-width: 1024px) {
-  .infobar .sec__in { padding-block: 110px 60px; gap: 20px; }
+  .infobar .sec__in {
+    padding-block: 130px 60px;
+    gap: 20px;
+  }
 }
+
+@media (max-width: 860px) {
+  .infobar .sec__in {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-block: 90px 55px;
+    gap: 24px;
+  }
+}
+
 @media (max-width: 767px) {
-  .infobar .sec__in { padding-block: 80px 50px; gap: 25px; }
+  .infobar .sec__in {
+    padding-block: 80px 50px;
+    gap: 20px;
+  }
 }
 
 .infobar__col {
-  width: 31%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-}
-
-.infobar__col--c {
+  align-items: center;
   justify-content: center;
 }
 
-@media (max-width: 1024px) {
-  .infobar__col { width: 48%; }
-}
-@media (max-width: 767px) {
-  .infobar__col { width: 100%; }
+@media (max-width: 860px) {
+  .infobar__col {
+    justify-content: flex-start;
+    max-width: 340px;
+    margin-inline: auto;
+  }
 }
 
 .ilist__item {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   position: relative;
   margin: 0;
   padding: 0;
+  max-width: 100%;
 }
 
 .ilist__item a {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  width: 100%;
+  text-decoration: none;
+  color: inherit;
 }
 
 .ilist__icon {
@@ -597,10 +615,10 @@ body.site {
 }
 
 .ilist__icon svg {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 1.85rem;
+  height: 1.85rem;
   fill: var(--bg-card);
-  margin: 0 .6rem 0 0;
+  margin: 0 0.75rem 0 0;
   transition: fill .3s, transform .3s;
 }
 
@@ -611,11 +629,11 @@ body.site {
 
 .ilist__text {
   align-self: center;
-  padding-inline-start: 5px;
+  padding-inline-start: 2px;
   font-family: "Poppins", Sans-serif;
-  font-size: 1.15rem;
-  font-weight: 400;
-  line-height: 1.5;
+  font-size: clamp(0.92rem, 1.1vw, 1.08rem);
+  font-weight: 500;
+  line-height: 1.45;
   color: var(--bg-card);
   transition: color .3s;
 }
@@ -626,7 +644,7 @@ body.site {
 
 @media (max-width: 767px) {
   .ilist__item { align-items: flex-start; }
-  .ilist__icon svg { width: 1.4rem; height: 1.4rem; margin: 0 .4rem 0 0; }
+  .ilist__icon svg { width: 1.45rem; height: 1.45rem; margin: 0 0.55rem 0 0; }
   .ilist__text { font-size: 0.95rem; }
 }
 
