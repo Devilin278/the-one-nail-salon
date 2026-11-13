@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 880" width="100%" height="100%">
+  <defs>
+    <linearGradient id="roseGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4D79"/>
+      <stop offset="50%" stop-color="#E2285B"/>
+      <stop offset="100%" stop-color="#A6103A"/>
+    </linearGradient>
+    <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4A738"/>
+      <stop offset="35%" stop-color="#E2B33D"/>
+      <stop offset="70%" stop-color="#B8861B"/>
+      <stop offset="100%" stop-color="#FCD561"/>
+    </linearGradient>
+    <filter id="glow2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#E2285B" flood-opacity="0.24"/>
+    </filter>
+  </defs>
+
+  <!-- Encompassing Open Heart: Modern Sculpted Dual-Arc (Sleek High-Fashion Luxury) -->
+  <g filter="url(#glow2)">
+    <!-- Left Sweeping Arc: Encompasses Top-Left down to Bottom Tail -->
+    <path d="M 730,175 
+             C 610,95 470,70 340,95 
+             C 170,130 95,280 95,435 
+             C 95,605 240,735 480,810 
+             C 620,855 745,865 800,865
+             C 830,865 860,860 900,850"
+          fill="none" 
+          stroke="url(#roseGrad2)" 
+          stroke-width="18" 
+          stroke-linecap="round"/>
+
+    <!-- Right Sweeping Arc: Loops from above Top-Right down past the Bottom Point with Open Overlap -->
+    <path d="M 825,120 
+             C 970,65 1160,65 1310,120 
+             C 1460,175 1520,320 1520,445 
+             C 1520,600 1395,720 1180,795 
+             C 1020,850 890,875 790,875
+             C 740,875 690,868 640,850"
+          fill="none" 
+          stroke="url(#roseGrad2)" 
+          stroke-width="18" 
+          stroke-linecap="round"/>
+
+    <!-- Tiny Accent Heart Sparkle near the Open Dip -->
+    <circle cx="775" cy="148" r="6" fill="url(#roseGrad2)"/>
+  </g>
+
+  <!-- Central Logo Content -->
+  <g transform="translate(54, 40)">
+    <!-- Main Brand Name: THE ONE -->
+    <text x="746" y="285" 
+          font-family="'Playfair Display', 'Cinzel', 'Didot', 'Georgia', serif" 
+          font-size="170" 
+          font-weight="900" 
+          letter-spacing="22" 
+          fill="#FFFFFF" 
+          text-anchor="middle">THE ONE</text>
+
+    <!-- Script Subheading: Nail Salon -->
+    <text x="746" y="435" 
+          font-family="'Allura', 'Great Vibes', cursive" 
+          font-size="160" 
+          font-weight="400" 
+          letter-spacing="4" 
+          fill="url(#goldGrad2)" 
+          text-anchor="middle">Nail Salon</text>
+
+    <!-- Divider Line with Diamond -->
+    <g transform="translate(746, 498)">
+      <line x1="-340" y1="0" x2="-50" y2="0" stroke="#FFFFFF" stroke-width="2.5" opacity="0.85"/>
+      <polygon points="0,-9 9,0 0,9 -9,0" fill="url(#goldGrad2)"/>
+      <circle cx="-25" cy="0" r="3.5" fill="#FFFFFF"/>
+      <circle cx="25" cy="0" r="3.5" fill="#FFFFFF"/>
+      <line x1="50" y1="0" x2="340" y2="0" stroke="#FFFFFF" stroke-width="2.5" opacity="0.85"/>
+    </g>
+
+    <!-- Location Tag: SILVER SPRING, MD -->
+    <text x="746" y="565" 
+          font-family="'Poppins', 'Montserrat', sans-serif" 
+          font-size="38" 
+          font-weight="700" 
+          letter-spacing="16" 
+          fill="#FFFFFF" 
+          text-anchor="middle">SILVER SPRING, MD</text>
+  </g>
+</svg>
