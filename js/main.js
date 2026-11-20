@@ -463,4 +463,59 @@ document.addEventListener('DOMContentLoaded', function () {
     restart();
   })();
 
+  /* ================= 6. Holiday Notice Popup Modal ================= */
+  (function initHolidayModal() {
+    var modal = document.getElementById('holidayModal');
+    if (!modal) return;
+
+    var closeX = document.getElementById('holidayModalCloseX');
+    var closeBtn = document.getElementById('holidayModalCloseBtn');
+    var overlay = document.getElementById('holidayModalOverlay');
+    var storageKey = 'the_one_holiday_notice_dismissed';
+
+    function openModal() {
+      modal.classList.add('is-visible');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      if (closeBtn) closeBtn.focus();
+    }
+
+    function closeModal() {
+      modal.classList.remove('is-visible');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      try {
+        sessionStorage.setItem(storageKey, 'true');
+      } catch (e) {
+        // Fallback if sessionStorage is unavailable/restricted
+      }
+    }
+
+    // Check if user already dismissed the announcement during this browsing session
+    var isDismissed = false;
+    try {
+      isDismissed = sessionStorage.getItem(storageKey) === 'true';
+    } catch (e) {
+      isDismissed = false;
+    }
+
+    if (!isDismissed) {
+      // Trigger smoothly after initial page load
+      setTimeout(openModal, 450);
+    }
+
+    if (closeX) closeX.addEventListener('click', closeModal);
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (overlay) overlay.addEventListener('click', closeModal);
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && modal.classList.contains('is-visible')) {
+        closeModal();
+      }
+    });
+
+    // Provide programmatic access if needed
+    window.openHolidayModal = openModal;
+  })();
+
 });
